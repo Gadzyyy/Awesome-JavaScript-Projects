@@ -1,6 +1,6 @@
 var e = new Date();
 var o = e.toISOString();
-var t = o.split("T")
+var t = o.split("T");
 document.getElementById('bd').value = t[0];
 
 function cal() {
@@ -19,18 +19,18 @@ function cal() {
         var month = u.getMonth() - v.getMonth();
         var day = u.getDate() - v.getDate();
         document.getElementById('age').innerHTML = year + " Years ," + month + " Months ," + day + " Days .";
-        var m = (year * 12) + month
+        var m = (year * 12) + month;
         document.getElementById('months').innerHTML = m + " Months, " + day + " Days .";
         var w = (m * 4.345);
         w = Math.round(w);
-        document.getElementById('weeks').innerHTML = w + " Weeks, " + day + " Days ."
+        document.getElementById('weeks').innerHTML = w + " Weeks, " + day + " Days .";
         var d = (w * 7) + day;
-        document.getElementById('days').innerHTML = d + " Days."
+        document.getElementById('days').innerHTML = d + " Days.";
         var h = d * 24;
-        document.getElementById('hours').innerHTML = h + " Hours."
+        document.getElementById('hours').innerHTML = h + " Hours.";
         var mi = h * 60;
-        document.getElementById('minutes').innerHTML = mi + " Minutes."
+        document.getElementById('minutes').innerHTML = mi + " Minutes.";
         var s = mi * 60;
-        document.getElementById('seconds').innerHTML = s + " Seconds."
+        document.getElementById('seconds').innerHTML = s + " Seconds.";
     }
 }
